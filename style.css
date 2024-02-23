@@ -1,0 +1,272 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: auto;
+}
+.barra_menu{
+    background-color: black;
+    color: white;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 3;    
+}
+
+.elemen{
+    padding-inline-end: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.elemen:hover{
+    text-decoration: underline;
+}
+
+header{
+    position: relative;
+    display: inline-block;
+}
+
+.portada_imagen{
+    width: 100%;    
+    filter: brightness(40%);
+    
+}
+
+#texto_portada{
+    position: absolute;
+    top:30%;
+    left: 8%;
+    color: white;
+}
+
+#texto_portada h1{
+    font-weight: 500;
+}
+
+#titol_pag{
+    font-weight: bold;
+}
+
+#subtitulo{
+    font-size: medium;
+    color: white;
+}
+
+.primerainfo{
+    border-color: black;
+    border-width: 3px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.primerainfo img{
+    height: 10em;
+    width: auto;
+    border-radius: 10%;
+}
+
+.primerainfo a{
+    display: flex;
+    align-items: center;
+}
+
+.primertext{
+    margin-left: 1em;
+}
+
+.main-principal{
+    margin-left: 12em;
+    margin-right: 12em
+}
+
+#sobre_nosaltres{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-size:xx-large;
+}
+
+#carta{
+    margin-top: 4em;
+    font-size: xx-large;
+}
+
+#titol_menu{
+    background-color: #12203E;
+    color: white;
+    text-align: center;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.menu_restaurant{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr;
+    row-gap: 0px;
+    column-gap: 10px;
+    grid-template-areas:
+    "menu1 contingut contingut contingut" 
+    "menu1 texto texto texto"
+    "menu1 fotos fotos fotos"
+    ;
+
+}
+
+.menu1{
+    grid-area: menu1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    border: 2px solid rgb(97, 139, 183);
+}
+
+.menu1_contingut{
+    grid-area: contingut;
+    margin-bottom: 0.5vw;
+    font-size:x-large;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.menu_restaurant p{
+    grid-area: texto;
+    margin-bottom: 1.5vw;
+}
+
+.fotos_menu1{
+    grid-area: fotos;
+    margin-bottom:0em;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0fr;
+    row-gap: 0px;
+    column-gap: 0px;
+    grid-template-areas: 
+    "f1 f2"
+    ;
+    
+}
+
+.foto{
+    height: 13vw;
+    width: 18vw;
+    position: relative;
+}
+
+.foto img{
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.piefoto{
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    opacity:1;
+    color: white;
+    font-size: 14px;
+    padding: 11px;
+    text-align: center;
+}
+
+#foto1{
+    grid-area: f1;
+}
+#foto2{
+    grid-area: f2;
+}
+
+#imagenes_galeria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.imagen_galeria{
+    height: 10vw;
+    width: 15vw;
+    padding: 0.5vw;
+    margin-block-end: 1vw;
+    border: 1px rgb(106, 106, 106);
+    border-style: double;
+}
+
+#ioscuro {
+    filter: brightness(60%);
+}
+
+.imagen_galeria:hover{
+    box-shadow: -1px 1px 10px aqua;    
+}
+
+.imagen_galeria img:hover{
+    filter:brightness(30%)
+}
+
+.imagen_galeria img{
+    height: 100%;
+    width: auto;
+}
+
+#galeria_titol{
+    font-size: xx-large;
+    margin-top: 6vw;
+}
+
+
+/*
+.
+.
+.
+FOOTER CON FLEX
+.
+.
+.
+.*/
+
+.footer-main{
+    margin-top: 3vw;
+    padding: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.contactos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 1vw;
+}
+.contactos a{
+    text-align: center;
+}
+.contactos i{
+    font-size: 1em;
+}
+
+.mail{
+    margin-right: 2vw;
+}
